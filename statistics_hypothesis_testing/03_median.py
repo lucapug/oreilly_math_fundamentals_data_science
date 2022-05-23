@@ -6,10 +6,11 @@ def median(values):
     print(ordered)
     n = len(ordered)
     mid = int(n / 2) - 1 if n % 2 == 0 else int(n/2)
+    #print(mid)
 
     if n % 2 == 0:
         return (ordered[mid] + ordered[mid+1]) / 2.0
     else:
         return ordered[mid]
 
-print(median(sample)) # prints 5
+print(median(sample)) # prints 7
